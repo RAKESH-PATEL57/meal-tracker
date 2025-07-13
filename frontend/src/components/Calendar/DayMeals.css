@@ -1,0 +1,90 @@
+.day-meals {
+  margin-top: 2rem;
+}
+
+.day-meals-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.day-meal-card {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.day-meal-card:hover {
+  transform: translateY(-5px);
+}
+
+.day-meal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.day-meal-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.day-meal-status {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.day-meal-status.eaten {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: var(--success-color);
+}
+
+.day-meal-status.skipped {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: var(--warning-color);
+}
+
+.day-meal-status.postponed {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: var(--danger-color);
+}
+
+.day-meal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.day-btn-action {
+  padding: 0.7rem;
+  border-radius: var(--border-radius);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  font-weight: 500;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.day-btn-action:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.day-btn-action.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .day-meals-container {
+    grid-template-columns: 1fr;
+  }
+}

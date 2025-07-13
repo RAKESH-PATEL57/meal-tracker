@@ -1,0 +1,15 @@
+.calendar-screen {
+  padding: 1rem 0;
+}
+
+.calendar-screen h1 {
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
