@@ -58,7 +58,7 @@ const CalendarScreen = () => {
 
   return (
     <div className="calendar-screen">
-      <h1>Meal Calendar</h1>
+      {/* <h1>Meal Calendar</h1> */}
       
       {loading ? (
         <div className="loading">Loading calendar...</div>
